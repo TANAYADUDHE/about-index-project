@@ -3,7 +3,7 @@ import firebase_admin
 from firebase_admin import credentials,db
 
 app= Flask (__name__)
-cred=credentials.Certificate("C:/Users/dudhe/Downloads/new-python-36518-firebase-adminsdk-fbsvc-285d26a5ac.json")
+cred=credentials.Certificate("new-python-36518-firebase-adminsdk-fbsvc-285d26a5ac.json")
 firebase_admin.initialize_app(cred,{"databaseURL":"https://new-python-36518-default-rtdb.firebaseio.com/"})
 
 @app.route('/',methods=['GET','POST'])
